@@ -1,0 +1,15 @@
+# Tested together on Python 3.12 (Windows + SQLite).
+# LangChain 0.3.x provides SQLDatabase, prompt chains, and the Ollama client
+# used by the small-model-safe pipeline in app.py.
+langchain==0.3.30
+langchain-core==0.3.86
+langchain-community==0.3.31
+langchain-ollama==0.3.10
+ollama==0.6.3
+
+# UI and data access
+streamlit==1.49.1
+SQLAlchemy==2.0.43
+
+# Parses SQL before execution so only one read-only SELECT can reach SQLite.
+sqlglot==27.29.0
